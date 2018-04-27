@@ -1,0 +1,14 @@
+$font-path:"../fonts";
+$color-red:#C90E1B;
+$color-green:#17B03E;
+$color-grey:#646472; //font
+$color-greyD:#DDD; //border
+$color-greyF2:#F2F2F2; //页面底色
+$color-greyA6:#9797A6; //字体背景色
+$color-white:#FFF;
+$color-black: #333;
+$color-blue: #5566aa;
+$font-min:12px;
+@function border($color) {
+    @return 1px solid $color;
+}

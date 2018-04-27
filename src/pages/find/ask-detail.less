@@ -1,0 +1,69 @@
+#pageContainer{
+    width:100%;
+    height:100%;
+    background: #fff;
+}
+.home-wrapping{
+    background: #f2f3f5;
+}
+.SuccessDiv{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;flex-direction:column;position:fixed;top:0;left:0;width:100%;height:100%;}
+/* 问题详情 */
+.ad-detail .title{padding:0.4rem 0.32rem;background-color:#fff;}
+.add-text{
+    line-height:0.48rem;    
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:3; }
+.add-tag{color:#509ffa;background-color:#eefaf6;padding:0 0.1rem;}
+
+/* 消息列表 */
+//.ad-messge-list{background-color:transparent;position:relative;flex-grow:1;}
+
+/* 消息时间 */
+.adm-time{text-align:center;margin-top:0.56rem;}
+.adm-time>span{background-color:#ededed;color:#999;border-radius:0.04rem;padding:0 0.12rem;display:inline-block;height:0.3rem;line-height:0.3rem;font-size:0.2rem;}
+
+/* 消息 */
+.mui-scroll>.ad-message:last-child{padding:0;}
+.ad-message{padding:0 0 0.32rem 0;overflow:hidden;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;}
+.ad-message.adm-l{flex-direction:row;}
+.ad-message.adm-r{flex-direction:row-reverse;}
+/* 头像 */
+.adm-headimg{width:0.9rem;height:0.9rem;border-radius:100%;overflow:hidden;}
+.adm-headimg>img{width:100%;}
+/* 消息框 */
+.adm-content{background-color:#fff;border:solid 1px #ededed; min-height:0.9rem;padding:0.2rem 0.22rem 0.2rem 0.28rem;max-width:4.7rem;border-radius:0.1rem;font-size:0.32rem;position:relative;}
+.ad-message.adm-l>.adm-content{margin-left:0.28rem;}
+.ad-message.adm-r>.adm-content{margin-right:0.28rem;background-color:#009bfe;border:none;color:#fff;padding:0.2rem 0.28rem 0.2rem 0.22rem;}
+/* 图片消息框 */
+.ad-message>.adm-content.admc-img{padding:0;border:solid 1px #ededed;background-color:#fff;}
+.adm-content.admc-img>img{width:3.06rem;border-radius:0.1rem;display:block;}
+/* 语音消息框 */
+.ad-message>.adm-content.admc-voice{width:1.93rem;}
+.adm-l>.adm-content.admc-voice{background:#fff url('~@/assets/images/ad-message-you.png') no-repeat 0.18rem 0.27rem;background-size:0.36rem auto;}
+.adm-r>.adm-content.admc-voice{background:#009bfe url('~@/assets/images/ad-message-me.png') no-repeat 0.22rem 0.27rem;background-size:0.36rem auto;}
+/* 语音时长 */
+.adm-voice-time{height:0.9rem;line-height:0.9rem;color:#999;font-size:0.28rem;}
+.adm-l>.adm-voice-time{margin-left:0.12rem;}
+.adm-r>.adm-voice-time{margin-right:0.12rem;}
+/* 文件消息框 */
+.ad-message>.adm-content.admc-file{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;}
+.admc-file-img>img{width:1.48rem;display:block;}
+.admc-file-text{padding-left:0.22rem;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;flex-direction:column; justify-content:space-between;}
+.admc-file-text-title{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+.ad-message.adm-l>.adm-content.admc-file{padding:0.22rem 0.22rem 0.22rem 0.28rem;}
+.ad-message.adm-r>.adm-content.admc-file{padding:0.22rem 0.28rem 0.22rem 0.22rem;}
+.ad-message.adm-r>.adm-content.admc-file{background-color:#fff;border:solid 1px #ededed;}
+/* 消息框小三角 */
+.ad-message.adm-l>.adm-content::before{content:"";z-index:2; border-top:solid 0.14rem transparent;border-bottom:solid 0.14rem transparent;border-right:solid 0.16rem #fff;position:absolute;left:-0.14rem;top:0.2rem;}
+.ad-message.adm-l>.adm-content::after{content:"";z-index:1; border-top:solid 0.14rem transparent;border-bottom:solid 0.14rem transparent;border-right:solid 0.16rem #ededed;position:absolute;left:-0.16rem;top:0.2rem;}
+.ad-message.adm-r>.adm-content::before{content:"";z-index:2; border-top:solid 0.14rem transparent;border-bottom:solid 0.14rem transparent;border-left:solid 0.16rem #009bfe;position:absolute;right:-0.14rem;top:0.2rem;}
+.ad-message.adm-r>.adm-content.admc-img::before,.ad-message.adm-r>.adm-content.admc-file::before{content:"";z-index:2; border-top:solid 0.14rem transparent;border-bottom:solid 0.14rem transparent;border-left:solid 0.16rem #fff;position:absolute;right:-0.14rem;top:0.2rem;}
+.ad-message.adm-r>.adm-content.admc-img::after,.ad-message.adm-r>.adm-content.admc-file::after{content:"";z-index:1; border-top:solid 0.14rem transparent;border-bottom:solid 0.14rem transparent;border-left:solid 0.16rem #ededed;position:absolute;right:-0.16rem;top:0.2rem;}
+
+.mui-pull-bottom-pocket{height:0;}
+.ad-messge-content{
+    padding: 0.48rem 0.28rem;
+}

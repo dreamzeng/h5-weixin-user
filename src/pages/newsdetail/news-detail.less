@@ -1,0 +1,113 @@
+@import "../../assets/less/base.less";  
+.news_content{
+    .content {min-height:400px;overflow:scroll;padding-bottom: 0.6rem;background: #f2f3f5;font-size: 0.22rem;
+        line-height: 0.54rem;color: #333;  position: fixed;top: 0;bottom: 0;width: 100%;
+        .article-tt,.con {padding: 0.2rem 0.25rem}
+        .article-tt {border-bottom: 1px solid #e5e5e5;}
+        h2 {font-size: 0.4rem;font-weight: bold;color: #202020; display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;
+            overflow: hidden}
+        h4 {line-height: 0.8rem; padding: 0rem 0.25rem;font-size: 0.28rem;color: #333; border-bottom: 1px solid #e5e5e5}
+        .sub {padding: 0.2rem 0rem .05rem 0rem;font-size: 0.24rem;
+            .label {background: #f1fdf9; border-radius: 1rem;padding: 0.1rem 0.2rem;color: #509ffa;}
+            .read {float: right;color: #999}
+        }
+        .con {font-size: 0.32rem}
+        .list:nth-child(1) {padding: 0px}
+        .list {padding-bottom: 0.2rem;background: #fff;transition: all 0.3s;
+            .good { position:relative;padding: 1rem 0rem;text-align: center;font-size: 0.3rem;
+                span{position: absolute; left: 50%;top: 50%;transform: translate(-50%,-50%);border-radius: 0.44rem;min-height: .88rem;width: 3rem;
+                    display: block;line-height: .75rem;border: 1px solid #e5e5e5;cursor: pointer;
+                    i {.icon-goods(); margin-right: 0.1rem}
+                    i.icon-goods-hover {.icon-goods-hover;}
+                    i,em { vertical-align: middle}
+                }
+                span.after {border-color:#ff5e5e;
+                    em {color: #ff5e5e}
+                }
+            }
+            .item {padding: 0.4rem 0.25rem;}
+            .service-item {padding-bottom: 0.3rem;
+                p,.more {display: inline-block}
+                p { width: 75%;line-height: 0.36rem;.strLen();
+                    span {font-weight: bold;font-size: 0.32rem}
+                    em {display: block; color: #999}
+                }
+                .more {.fr;line-height: 0.8rem;
+                    span {min-width: 52px;padding: 8px 24px; border: 1px solid #00ccb1;border-radius: 5px;color: #00ccb1}
+                }
+            }
+            .comitList {position:relative;padding: 0rem 0.25rem 0rem .25rem;
+                ul{margin-top:.25rem}
+                .no-data{position: absolute;top: 0px;left: 0px;width: 100%;height:3.96rem;line-height: 6.6rem;text-align:center;font-size:12px;background:#fff;overflow: hidden;
+                    i{position: absolute;.no_commit();width: 5rem; height: 3rem;display: block;left: 50%;top: 33%; transform: translate(-50%,-50%)}
+                    em{color:#999}
+                 } 
+                li {margin-bottom: 0.2rem;font-size: 0.32rem;
+                    .user-name {color: #509ffa;font-size: 0.26rem}
+                    .user-img {width: 50px;height: 50px;display: inline-block;vertical-align:top;
+                        img {width: 100%;height: 100%;border-radius: 50%}
+                    }
+                    .time,.del {font-size: 0.22rem}
+                    .good-nums {font-size: 0.12rem}
+                }
+                .user-content {width: 83%;display: inline-block;line-height: 0.48rem;
+                    .good-nums,.del {.fr}
+                    .time,.del,.good-nums { color: #999}
+                    .hover {
+                        em {color: #ff5e5e}
+                    }
+                    .good-nums {
+                        i {margin-left: 0.1rem;vertical-align: top}
+                    em {font-size: 0.24rem}
+                    }
+                }
+                .reply-wrap{margin-left:1rem;padding: 0.2rem;border-radius: 0.1rem;background: #f2f3f5;
+                    .reply-list{max-height: .8rem;overflow:hidden}
+                    .reply { line-height: 0.4rem;font-size: 0.26rem;
+                        span{margin-right: 0.1rem; color: #5f9ee0}
+                        .info {
+                            em { margin-right: 0.1rem;color: #999}
+                        }
+                    }
+                    .showreply a {font-size:0.26rem;margin-right: 0.1rem; color: #5f9ee0}
+                }
+                
+            }
+        }
+    }
+    .page-tabbar ,.commit-area {position: fixed;bottom: 0;width: 100%;padding: 0rem 0.2rem;height:.92rem;line-height: 1rem;display: -webkit-box;z-index: 0;
+        display: flex; background-color: #fff;border: 1px solid #e5e5e5;font-size: 0.14rem;
+        .picker-slot-wrapper, .picker-item {
+            backface-visibility: hidden;
+          }
+        div.bom-left,div.bom-right{flex: 1;position: relative; }
+        div.bom-left {position:absolute;width:62%;text-align: left;
+            .pub { width: 100%;padding-left: 0.2rem;border-radius: 0.12rem;background: #f2f3f5;border: none;
+                height: 0.65rem;line-height: 0.65rem;font-size: 0.32rem;color: #333;}
+        }
+        div.bom-right {position:absolute;right:0px; top: -.08rem;width: 26%;text-align: center;
+            span {min-width: 35%;display: inline-block}
+            em {font-size: 0.24rem}
+        }
+        .icon-commit {margin-right: 0.1rem}
+        .icon-collect { .icon-collect;}
+        .icon-collect-hover {.icon-collect-hover;}
+    }
+    .commit-area {min-height: 150px;display:table;z-index: 10;
+        .commit-input {
+            .textbox {width: 92%;background: #f8f8f8;border:none;margin: 0rem 0.25rem;border-radius: .08rem;font-size: .32rem}
+        }
+        .commit-head {padding:0rem 0.2rem 0rem;font-size: 0.32rem;
+            span { width: 32%;display: inline-block;text-align: center;}
+            span.cancle {text-align: left;
+                a {color: #b0b0b0}
+            }
+            span.count {font-size: 0.24rem;color: #c7c7cd}
+            span.public {text-align: right;
+                a {color: #00ccb1}
+            }
+        }
+    }
+}
+
+.mask{position: fixed;left: 0;top: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,.5);}

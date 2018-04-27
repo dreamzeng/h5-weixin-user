@@ -1,0 +1,83 @@
+@import '~@/assets/less/var.less';
+.main{
+    background: #e5e5e5;
+    .home-wrapping{
+        position: fixed;
+        width: 100%;
+        top: 44px;
+        bottom: 0;
+        display: flex;
+        display: -webkit-flex;
+        flex-flow: row;
+        .left-wrapping{
+            flex: 0 0 1.58rem;
+            width: 1.58rem;
+            .items{
+                position: relative;
+                width: 100%;
+                font-size: .28rem;
+                color: #666;
+                .item{
+                    width: 100%;
+                    height: 0.9rem;
+                    line-height: .9rem;
+                    text-align: center;
+                }
+                .active{
+                    background: #fff;
+                    color: #00ccb1;
+                    border-left: 0.08rem solid #00ccb1;
+                }
+            }
+        }
+        .right-wrapping{
+            flex: 1; 
+            background: #fff;
+            padding: 0 .24rem;
+            .items{
+                width: 100%;
+                padding-bottom: .32rem;
+                .item{
+                    padding:.4rem 0 .36rem 0;
+                    border-bottom: 1px solid #e5e5e5;
+                    .title{
+                        font-size: .32rem;
+                        font-weight: bold;
+                        color: #333;
+                        margin-bottom: .24rem;
+                    }
+                    .content{
+                        .strLen2;
+                        font-size: .26rem;
+                        line-height: .34rem;
+                        color: #666;
+                    }
+                    .price{
+                        position: relative;
+                        margin-top: .24rem;
+                        font-size: 0;
+                        span{
+                            display: inline-block;
+                        }
+                        .p1{
+                            color: #ff5533;
+                            font-size: .36rem;
+                            margin-right: .24rem;
+                            i{
+                                font-size: .24rem;
+                                display: inline-block;
+                                margin-right: 2px;
+                            }
+                        }
+                        .p2{
+                            position: relative;
+                            top: -0.05rem;
+                            font-size: .22rem;
+                            color: #b0b0b0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,238 @@
+
+#pageContainer{
+    width:100%;
+//  opacity: 0;
+}
+.find {
+    width: 100%;
+    height: 100%;
+}
+.find .top-bg{
+    width:100%;
+    height:1.8rem;
+}
+.ml-bottom-menu {
+    background-color: #fff;
+}
+.ml-bottom-menu.fixed{
+    position: fixed;
+    top:0;
+}
+.ml-bottom-bar {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.ml-bottom-bar>li {
+    height: 0.8rem;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #333;
+    line-height: 0.8rem;
+    width: 33.33%;
+}
+
+.ml-bottom-bar>li.active {
+    color: #00ccaa;
+}
+
+.ml-bottom-bar-underline {
+    width: 33.33%;
+    position: relative;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+    left: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.ml-bottom-bar-underline:after {
+    content: "";
+    display: block;
+    width: 1.56rem;
+    height: 0.04rem;
+    margin: auto;
+    background-color: #00ccaa;
+}
+
+.ml-bottom-bar-underline-50 {
+    width: 50%;
+}
+.article ul li,.seek ul li,.case ul li{
+    width:100%;
+    padding: 0.48rem 0.32rem;
+    margin-top: 0.24rem;
+    background: #fff;
+}
+.article ul li{ 
+    display: flex;
+    justify-content: space-between;
+}
+.article ul li .left{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width:100%;
+    padding-right: 0.24rem;
+}
+.article ul li .left p{
+    width:100%;
+    font-size: 0.32rem;
+    color:#333;
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2; 
+}
+.article ul li .left div{
+    font-size: 0.24rem;
+    color:#b0b0b0;
+    display: flex;
+    justify-content: space-between;
+}
+.seek ul li .foot span{
+    font-size: 0.24rem;
+}
+.case ul li .foot span{
+    font-size: 0.24rem;
+}
+.article ul li .left div span:nth-child(3),.seek ul li .foot span:nth-child(3),.case ul li .foot span:nth-child(3){
+    display: inline-block;
+    width:1.18rem;
+    height:0.4rem;
+    line-height: 0.4rem;
+    font-size: 0.24rem;
+    text-align: center;
+    border-radius: 0.04rem;
+    background: #f1fdf9;
+    color:#509ffa;
+}
+.article ul li img{
+    width:2.14rem;
+    height:1.66rem;
+}
+.seek ul li{
+    padding-top: 0.4rem;
+}
+.quick-seek{
+    width:0.96rem;
+    height:0.96rem;
+    background: url(~@/assets/images/seek.png) no-repeat;
+    background-size:contain ;
+    border-radius: 50%;
+    position: fixed;
+    right:0.32rem;
+    bottom: 1.32rem;
+    z-index: 100;
+}
+.seek ul li .lawyer{
+    position: relative;
+    width: 100%;
+    height:0.4rem;
+}
+.seek ul li .lawyer .logo,.seek ul li .lawyer p,.case ul li .analyze .analyze-icon,.case ul li .analyze p{
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+}
+.seek ul li .lawyer p{
+    margin-left: 0.56rem;
+    font-size: 0.28rem;
+    color:#999;
+}
+.seek ul li .lawyer .logo{
+    width:0.4rem;
+    height:0.4rem;
+    border-radius: 0.4rem;
+    background: lightcyan;
+    overflow: hidden;
+}
+.seek ul li .lawyer .logo img{
+    width:0.4rem;
+    height:0.4rem;
+}
+.seek ul li .title{
+    font-size: 0.32rem;
+    line-height: 0.48rem;
+    color:#333;
+    margin-top: 0.12rem;
+    margin-bottom: 0.24rem;
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:3; 
+}
+.seek ul li .foot{
+    display: flex;
+    justify-content: space-between;
+}
+/*.case{
+    opacity: 0;
+}*/
+.case ul li .title{
+    width:100%;
+    padding-left: 0.52rem;
+    background: url(~@/assets/images/wen.png) no-repeat 0 0.06rem;
+    background-size:0.32rem 0.32rem;
+}
+.case ul li .title p{
+    font-size: 0.32rem;
+    line-height:0.44rem;
+    color:#333;
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2; 
+}
+.case ul li .analyze{
+    width:100%;
+    height:0.32rem;
+    position: relative;
+    margin-top:0.2rem ;
+    margin-bottom: 0.3rem;
+}
+.case ul li .analyze .analyze-icon{
+    width: 0.32rem;
+    height:0.32rem;
+    background: url(~@/assets/images/da.png) no-repeat;
+    background-size: contain;
+}
+.case ul li .analyze p{
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:1; 
+    font-size: 0.28rem;
+    color:#666;
+    margin-left: 0.52rem;
+}
+.case ul li .foot{
+    display: flex;
+    justify-content: space-between;
+}
+.mui-scroll-wrapper{
+    /*top:1.8rem !important;*/
+    background: #f1f2f6 !important;
+    }
+.box{
+    width:100px;
+    height:100px;
+    background: red;
+    position: fixed;
+    top:0;
+}
+

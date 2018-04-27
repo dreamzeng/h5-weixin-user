@@ -1,0 +1,147 @@
+*, :after, :before{box-sizing: border-box; word-break: break-all;}
+.exchange{
+    width:6.34rem;
+    height:1.2rem;
+    box-sizing: border-box;
+    /*padding: 0 0.58rem;*/
+    margin: 0 auto;
+    padding-top:0.74rem;
+    position: relative;
+}
+.user-coupon{
+    width:100%;
+    height:100%;
+    background: #f7f8f9;
+}
+.couponGuide{
+    width:100%;
+    text-align: right;
+    font-size: 0.28rem;
+    position: fixed;
+    top:0.2rem;
+    right:0.5rem;
+    z-index:1;
+}
+.exchange .clear{
+    width:0.32rem;
+    height:0.32rem;
+    float: right;
+    background: url(~@/assets/images/delete1.png) no-repeat;
+    background-size:contain;
+    margin-top: 0.12rem;
+    opacity: 0;
+    position: absolute;
+    right:1.7rem;
+    
+}
+.exchange input{
+    background: #f7f8f9;
+    border:0 !important;
+    font-size: 0.32rem;
+    color:#CCCCCC;
+    float: left;
+    margin-top: 0.1rem;
+    line-height: 0.32rem;
+    width:4.1rem;
+    }
+.exchange input::-webkit-input-placeholder{
+    color: #CCCCCC;
+}
+.exchange p{
+    width:1.5rem;
+    height:0.56rem;
+    background: #00ccb1;
+    border-radius: 0.56rem 0.56rem;
+    text-align: center;
+    line-height: 0.6rem;
+    color:#FFFFFF;
+    font-size: 0.32rem;
+    float: right;
+}
+.empty{
+    text-align: center;
+    margin-top: 1.2rem;
+    font-size: 0.24rem;
+    color:#ccc;
+    display: none;
+}
+.line{
+    width:6.8rem;
+    height:0.1rem;
+    background: url(~@/assets/images/xj-line.png) no-repeat;
+    background-size:cover;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    margin-bottom: 0.52rem;
+}
+
+.section li{
+    width:6.6rem;
+    height:2.1rem;
+    margin-left: 0.44rem;
+    margin: 0 auto;
+    background: url(~@/assets/images/coupon-no.png) no-repeat center;
+    background-size:100%;
+    margin-bottom: 0.24rem;
+}
+.section .item-active{
+    background: url(~@/assets/images/coupon-choose.png) no-repeat center ;
+    background-size:6.6rem 2.1rem;
+}
+.section li .price{
+    float: left;
+    color: #FF655F;
+    line-height: 2.1rem;
+    font-size: 0.34rem;
+    /*margin-left: 0.42rem;*/ 
+    width:1.96rem;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.section li .price span{
+    font-size: 0.42rem;
+
+}
+.section li .info{
+    float: right;
+    margin-right: 0.3rem;
+}
+.section li .info p{
+    font-size: 0.24rem;
+    color:#CCCCCC;
+    width:4rem;
+}
+.section li .info .title{
+    font-size: 0.4rem;
+    color: #666666;
+    margin-top: 0.20rem;
+    line-height: 0.54rem;
+}
+.section li .info .service{
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+    height:0.56rem;
+    margin-bottom: 0.04rem;
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2; 
+}
+.mui-popup-button{
+    color:#00ccb1 !important;
+}
+@media all and (max-width:320px){
+    .section li{
+        height:2.5rem !important;
+        background-size:6.6rem 2.5rem !important;
+    }
+    .section li .price{
+        line-height: 2.5rem !important;
+    }
+}
+.mui-popup-button{
+    color:#00ccb1 !important;
+}

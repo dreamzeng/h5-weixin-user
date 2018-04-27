@@ -1,0 +1,77 @@
+@import './variables.scss';
+html {
+  font-size: 100px;
+  background-color: $color-greyF2;
+}
+
+body {
+  margin: 0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+.clearfix {
+  overflow: hidden;
+  zoom: 1;
+  /*兼容 IE*/
+}
+
+.font-12 {
+  font-size: 1.2rem;
+}
+
+.font-14 {
+  font-size: 1.4rem;
+}
+
+.font-16 {
+  font-size: 1.6rem;
+}
+
+.font-40 {
+  font-size: 2rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.color-red {
+  color: $color-red;
+}
+
+.color-black {
+  color: $color-black;
+}
+
+.color-grey {
+  color: $color-grey;
+}
+
+.color-green {
+  color: $color-green;
+}
+
+.head-top {
+  padding-top: 40px;
+}
+
+.head-top2 {
+  padding-top: 90px;
+}
+
+.tab-bottom {
+  padding-bottom: 60px;
+}
+
+.clearBoth {
+  clear: both;
+}
+.content-state {
+  margin-top: 3rem;
+}

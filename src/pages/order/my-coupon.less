@@ -1,0 +1,200 @@
+#my-coupon{
+    width:100%;
+    min-height:100%;
+    background: #fff !important;
+}
+.couponGuide{
+    width:100%;
+    text-align: right;
+    font-size: 0.28rem;
+    position: fixed;
+    top:0.2rem;
+    right:0.5rem;
+    z-index:1;
+}
+.exchange{
+    width:6.34rem;
+    height:1.2rem;
+    box-sizing: border-box;
+    /*padding: 0 0.58rem;*/
+    margin: 0 auto;
+    padding-top:0.74rem;
+    position: relative;
+}
+.exchange .clear{
+    width:0.32rem;
+    height:0.32rem;
+    float: right;
+    background: url(~@/assets/images/delete1.png) no-repeat;
+    background-size:contain;
+    margin-top: 0.12rem;
+    position: absolute;
+    right:1.7rem;
+    
+}
+.exchange input{
+    border:0 !important;
+    font-size: 0.32rem;
+    color:#CCCCCC;
+    float: left;
+    margin-top: 0.1rem;
+    line-height: 0.32rem;
+    width:4.1rem;
+    }
+.exchange input::-webkit-input-placeholder{
+    color: #CCCCCC;
+}
+.exchange p{
+    width:1.5rem;
+    height:0.56rem;
+    background: #00ccb1;
+    border-radius: 0.56rem 0.56rem;
+    text-align: center;
+    line-height: 0.6rem;
+    color:#FFFFFF;
+    font-size: 0.32rem;
+    float: right;
+}
+.empty{
+    text-align: center;
+    margin-top: 1.2rem;
+    font-size: 0.24rem;
+    color:#ccc;
+    /*display: none;*/
+}
+.line{
+    width:6.8rem;
+    height:0.1rem;
+    background: url(~@/assets/images/xj-line.png) no-repeat;
+    background-size:cover;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    margin-bottom: 0.52rem;
+}
+.failure .failure-btn{
+    width:2.5rem;
+    height:0.5rem;
+    box-sizing: border-box;
+    border: 1px solid #00ccb1;
+    border-radius: 0.25rem 0.25rem;
+    line-height: 0.5rem;
+    text-align: center;
+    color: #00ccb1;
+    font-size: 0.28rem;
+    margin:0 auto;
+    margin-top: 0.2rem;
+    margin-bottom: 0.3rem;
+}
+.failure .failured{
+    color:#999999;
+    font-size: 0.28rem;
+    text-align: center;
+    margin-top: 0.4rem;
+    line-height: 0.31rem;
+    position: relative;
+    margin-bottom: 0.4rem;
+}
+.failure .failured::before,.failure .failured::after{
+    position: absolute;
+    bottom:0.15rem;
+    height: 1px !important;
+    width: 1rem;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaley(.5);
+    box-sizing: border-box;
+    background-color: #e5e5e5;
+}
+.failure .failured::after{
+    right: 1.5rem;
+}
+.failure .failured::before{
+    left:1.5rem;
+}
+.failure .couponList li .price,.failure .couponList li .price span{
+    color:#999999 !important;
+}
+.failure .couponList .overdue{
+    background-image:url(~@/assets/images/expire.png) ;
+}
+.failure .couponList .used{
+    background-image:url(~@/assets/images/used.png) ;
+}
+.mui-popup-button{
+    color:#00ccb1 !important;
+}
+[v-cloak]{display: none;}
+.mui-popup-button{
+    color:#00ccb1 !important;
+}
+.couponList li{
+    width:6.6rem;
+    height:2.1rem;
+    margin-left: 0.44rem;
+    margin: 0 auto;
+    background: url(~@/assets/images/coupon-no.png) no-repeat center;
+    background-size:100%;
+    margin-bottom: 0.24rem;
+}
+li{
+    list-style: none;
+}
+.couponList .item-active{
+    background: url(~@/assets/images/coupon-choose.png) no-repeat center ;
+    background-size:6.6rem 2.1rem;
+}
+.couponList li .price{
+    float: left;
+    color: #FF655F;
+    line-height: 2.1rem;
+    font-size: 0.34rem;
+    /*margin-left: 0.42rem;*/
+    width:1.96rem;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.couponList li .price span{
+    font-size: 0.42rem;
+    color: #FF655F;
+}
+.couponList li .info{
+    float: right;
+    margin-right: 0.2rem;
+}
+.couponList li .info p{
+    font-size: 0.24rem;
+    color:#CCCCCC;
+    width:4.2rem;
+}
+.couponList li .info p:nth-child(4){
+    line-height: 0.28rem !important;
+}
+.couponList li .info .title{
+    font-size: 0.4rem;
+    color: #666666;
+    margin-top: 0.2rem;
+    /*line-height: 0.54rem;*/
+}
+.couponList li .info .service{
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+    height:0.58rem;
+    margin-bottom: 0.02rem;
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2; 
+    margin-top: 0.05rem;
+}
+@media all and (max-width:320px){
+    .couponList li{
+        height:2.4rem !important;
+        background-size:6.6rem 2.4rem !important;
+    }
+    .couponList li .price{
+        line-height: 2.4rem !important;
+    }
+}

@@ -1,0 +1,147 @@
+@import '~@/assets/less/var.less';
+.main{
+    width: 100%;
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    .wrapping{
+        position: relative;
+        .icon{
+            width: 100%;
+            height: 2.92rem;
+            background: #fff;
+            display: flex;
+            display: -webkit-flex;
+            justify-content: center;
+            .avatar{
+                width: 1.66rem;
+                height: 1.66rem;
+                margin-top: .34rem;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+                i{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    background: url(~@/assets/icon/camera.png);
+                    background-size: .64rem .64rem;
+                    width: .64rem;
+                    height: .64rem;
+                }
+            }
+        }
+        .datum{
+            margin-top: 0.24rem;
+            background: #fff;
+            .padding-32px;
+            .row{
+                height: 1.16rem;
+                line-height: 1.16rem;
+                font-size: .3rem;
+                color: #333;
+                display: flex;
+                display: -webkit-flex;
+                align-items: baseline ;
+                flex-flow: row;
+                .label{
+                    flex: 0 0 1.66rem;
+                    text-align: left;
+                }
+                .field{
+                    flex: 1;
+                    display: flex;
+                    display: -webkit-flex;
+                    align-items: baseline ;
+                    flex-flow: row;
+                    input,span{
+                        flex: 1;
+                        height: 1rem;
+                        width: 100%;
+                        display: inline-block;
+                        border: none;
+                    }
+                    input::-webkit-input-placeholder {
+                        color: #c7c7cd;
+                    }
+                    input::-moz-placeholder {
+                       color: #c7c7cd;
+                    }
+                    input:-ms-input-placeholder {
+                       color:#c7c7cd;
+                    }
+                    .default{
+                        color: #c7c7cd;
+                        font-size: .24rem;
+                    }
+                    .act{
+                        font-size: .3rem;
+                        color: #333;
+                    }
+                    .item-error{
+                        flex: 0 0 .2rem;
+                        display: inline-block;
+                        background: url(~@/assets/images/hint.png);
+                        background-size: .2rem .2rem;
+                        width: .2rem;
+                        height: .2rem;
+                        filter:alpha(opacity=0);
+                        opacity:0;
+                    }
+                    .item-error-show{
+                        opacity: 1;
+                        transition: opacity .8s ease-out, -webkit-transform 0.6s ease-out;
+                    }
+                    .item-error-hied{
+                        opacity: 0;
+                        transition: opacity .8s ease-out, -webkit-transform 0.6s ease-out;
+                    }
+                }
+            }
+        }
+        .foot{
+            display: flex;
+            display: -webkit-flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 1.2rem;
+            .submit{
+                width: 6.86rem;
+                height: .96rem;
+                line-height: .96rem;
+                text-align: center;
+                background: #00ccb1;
+                color: #fff;
+                font-size: .34rem;
+                border-radius:.48rem ;
+                filter:alpha(opacity=82);
+                opacity:.82;
+            }
+        }
+    }
+    .popupVisible{
+        width:100%;
+        .selectSex{
+            background: #fff;
+            .label{
+                line-height:1.18rem;
+                text-align: center;
+                font: .30rem;
+                color: #00ccb1;
+            }
+        }
+    }
+    .mint-popup-picker {
+        width: 100%;
+        .picker-slot-wrapper, .picker-item {
+            backface-visibility: hidden;
+        }
+    }
+}

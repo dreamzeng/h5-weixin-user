@@ -1,0 +1,95 @@
+#pageContainer{
+    width:100%;
+    height:100%;
+    background: #fff;
+}
+/* 服务详情顶部菜单 */
+.si-top-menu{
+    background-color:#fff;
+    width:100%;
+    z-index:10;}
+.si-top-menu.fixed{
+    position:fixed;
+    left:0;
+    top:0; 
+    z-index:11;
+}
+.si-top-menu.hide{
+    opacity: 0;
+}
+.si-top-bar{display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex; }
+.si-top-bar-li-50>li{width:50%;}
+.si-top-bar>li{height:0.8rem;text-align:center;font-size:0.32rem;color:#666;line-height:0.8rem;flex-grow:1;width:33.33%;}
+.si-top-bar>li.active{color:#00ccaa;}
+.si-top-bar-underline{width:33.33%;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;position:relative;transition:all 0.1s;left:0;}
+.si-top-bar-underline:after{content:"";display:block;width:0.64rem;height:0.04rem;margin:auto;background-color:#00ccaa;}
+.si-top-bar-underline-50{width:50%;}
+
+/* 服务选项 */
+.si-case-box>li{margin-top:0.04rem;}
+.si-case-name{color:#333;margin-bottom:0.14rem;font-size:0.24rem;}
+.si-service-case{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;-moz-flex-wrap:wrap;-ms-flex-wrap:wrap;-o-flex-wrap:wrap;flex-wrap:wrap;}
+.si-service-case>li{font-size:0.24rem;display:block;position:relative; height:0.44rem;line-height:0.44rem;padding:0 0.2rem; border:solid 1px transparent;background-color:#fff;border-radius:0.06rem;margin:0 0.2rem 0.2rem 0;}
+.si-service-case>li::after{content:"";position:absolute;display:block;top:-50%;left:-50%;right:-50%;bottom:-50%;border-radius:0.1rem;border:solid 1px #b0b0b0;-webkit-transform:scale(0.5);-moz-transform:scale(0.5);-ms-transform:scale(0.5);-o-transform:scale(0.5);transform:scale(0.5);}
+.si-service-case>li.active{border:solid 1px transparent;color:#00ccaa;background:#fff url('~@/assets/images/si-choose.png') no-repeat right bottom;background-size:0.32rem auto;}
+.si-service-case>li.active::after{border:solid 1px #00ccaa;}
+.si-service-case>li.disabled{border:solid 1px transparent;color:#e5e5e5;}
+.si-service-case>li.disabled::after{border:solid 1px #e5e5e5;}
+
+/* 优惠券 */
+.si-coupon-activity{border:solid 1px transparent;color:#ff275a;border-radius:0.05rem;display:inline-block;height:0.4rem;line-height:0.4rem;padding:0 0.2rem;}
+
+/* 平台担保 */
+.si-ptdb>span{padding-left:0.4rem;margin-right:0.5rem;background:url('~@/assets/images/si-icon.png') no-repeat left center;background-size:0.32rem auto;display:inline-block;height:0.32rem;line-height:0.32rem;}
+
+/* 服务流程 */
+.si-fwlc{padding:0.32rem 0;background-color:#fff;}
+.si-fwlc>h2{padding:0 0.32rem;}
+.si-fwlc-content>img{width:100%;}
+
+/* 法义统计 */
+.si-logo{display:block;width:auto;height:1.36rem;}
+.si-count{font-size:0.28rem;text-align:center;padding:0 0.3rem;height:1.36rem;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-flex-grow:1;-moz-flex-grow:1;-ms-flex-grow:1;-o-flex-grow:1;flex-grow:1;}
+.si-count>li{padding:0 0.36rem;position:relative;height:100%;-webkit-flex-grow:1;-moz-flex-grow:1;-ms-flex-grow:1;-o-flex-grow:1;flex-grow:1;}
+.si-count>li>div{position:relative;top:50%;-webkit-transform:translate(0,-50%);-moz-transform:translate(0,-50%);-ms-transform:translate(0,-50%);-o-transform:translate(0,-50%);transform:translate(0,-50%);}
+
+/* 常见问题 */
+.sic-questions{padding:0.32rem;font-size:0.28rem;}
+.sic-questions{word-break:break-all;word-wrap:break-word;overflow:hidden;}
+.sic-questions ol,.sic-questions li{list-style:decimal;margin-left:0.2rem;}
+.sic-questions>p{font-size:0.28rem;}
+.sic-questions table{width:100%;}
+.sic-questions table td{border: 1px solid #999;padding:0 0.1rem;}
+
+/* 服务详情底部 */
+.si-footer{position:fixed;bottom:0;left:0;width:100%;z-index:10;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;}
+.si-footer:before{z-index:10;content:"";height:1px;width:100%;position:absolute;top:0;right:0;-webkit-transform:scaleY(0.5);-moz-transform:scaleY(0.5);-ms-transform:scaleY(0.5);-o-transform:scaleY(0.5);transform:scaleY(0.5); box-sizing:border-box;background-color:#E1E1E1;}
+.si-footer>li{height:1.1rem;line-height:1.1rem;text-align:center;}
+.si-footer>li:nth-of-type(1){width:1.18rem;height:1.1rem;font-size: 0.26rem;color:#999;background: #fff;position: relative;background:url(~@/assets/images/icon/collect.png) no-repeat center 0.2rem #fff;background-size:0.34rem 0.34rem ; padding-top: 0.2rem;}
+.si-footer>li:nth-of-type(2){flex-grow:1}
+.si-footer>li:nth-of-type(3){width:3rem;height:1.1rem;}
+.si-footer>li.collected{background:url(~@/assets/images/icon/collect-hover.png) no-repeat center 0.2rem #fff;background-size:0.34rem 0.34rem ;}
+.si-match-lawyer-btn{color:#fff;background:url(~@/assets/images/si-match-lawyer.png)no-repeat left 0.02rem;background-size:0.36rem auto;padding-left:0.6rem;}
+
+/*底部弹层*/
+.graybox{width: 100%;visibility:hidden; height: 100%;position: fixed;top:0; left:0;background:rgba(0,0,0,0.5);z-index:9998;transition: all .3s;opacity:0;}
+.graybox.show{visibility:visible;opacity:1;}
+.sib-content{max-height:8rem;overflow-y:scroll;overflow-x:hidden;}
+.service-introduce-basic{position: fixed;z-index: 9999; left: 0; bottom:0; background:#f7f7f7;width: 100%;transition: all .3s;-webkit-transform:translate(0,100%);-moz-transform:translate(0,100%);-ms-transform:translate(0,100%);-o-transform:translate(0,100%);transform:translate(0,100%);}
+.service-introduce-basic h3{height: 0.92rem; line-height: 0.92rem; color:#333; width: 100%; text-align: center; font-size: 0.34rem;margin-bottom: 0.2rem;position: relative;}
+.service-introduce-basic h3 .closebtn{width: 1rem;height: 0.92rem;display:block;position: absolute;right:0; top:0;}
+.service-introduce-basic h3 .closebtn::after{content:"";width: 0.32rem;height: 0.32rem;display:block; background:url(~@/assets/images/closed.png) no-repeat center;background-size: cover;position: absolute;right:50%; top:50%;margin:-0.16rem -0.16rem 0 0;}
+.service-introduce-basic.sib-ptdb ul{padding:0.2rem 0.4rem 0 0.4rem;}
+.service-introduce-basic.sib-ptdb li{margin-bottom: 0.5rem;padding-left: 0.44rem;position: relative;background:url(~@/assets/images/si-icon.png)no-repeat top left; background-size: 0.32rem;}
+/* .service-introduce-basic.sib-ptdb li::before{content:"";position: absolute;width: 0.32rem;height: 0.32rem; background:url(~@/assets/images/si-icon.png)no-repeat center; background-size: 0.32rem; left:0; top:0;} */
+.service-introduce-basic.sib-ptdb li h5{color:#333;font-size: 0.3rem; padding-bottom: 0.1rem;}
+.service-introduce-basic.sib-ptdb li p{color:#666; text-align: justify;font-size: 0.26rem;line-height: 0.4rem;}
+.service-introduce-basic .button{width: 100%;margin-top:0.4rem;}
+.service-introduce-basic .button button{width: 100%;height: 1rem;background:#00ccaa;color:#fff;font-size: 0.34rem; border-radius: 0;border:0;}
+.service-introduce-basic.show{-webkit-transform:translate(0,0);-moz-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0);}
+
+/* 请求接口失败 */
+#errWrap, #serverexcep{width: 100%;height: 100%; padding-top:3rem; text-align: center;font-size: 0.26rem;}
+#errWrap p{padding-top: 2.48rem; background:url(~@/assets/images/operfail.png) no-repeat top center; background-size: 4.48rem;}
+#errWrap button, #serverexcep button{width: 1.6rem;height: 0.6rem; margin-top: 0.52rem; color:#00ccaa; border:1px solid #00ccaa;}
+//#serverexcep p{padding-top: 2.8rem; background:url(~@/assets/images/serverexcep.png) no-repeat top center; background-size: 5.2rem;}

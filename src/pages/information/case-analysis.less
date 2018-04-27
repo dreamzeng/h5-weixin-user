@@ -1,0 +1,301 @@
+@import '~@/assets/less/var.less';
+
+.case-main{
+    width: 100%;
+    background: #e5e5e5;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    font-size: 12px;
+    .wrapping{
+        position: relative;
+        .row{
+            background: #fff;
+            .padding-32px;
+        }
+        .title{
+            position: relative;
+            display: flex;
+            display: -webkit-flex;
+            align-items: baseline ;
+            flex-flow: row;
+            padding:.32rem;
+            .icon{
+                flex: 0 0 .32rem;
+                background: url('~@/assets/icon/question-icon.png');
+                background-size: .32rem .32rem;
+                width: .32rem;
+                height: .32rem;
+                margin-right: .32rem;
+            }
+            .right{
+                flex: 1;
+                position: relative;
+                font-size: .4rem;
+                font-weight: bold;
+                color: #202020;
+                line-height: .52rem;
+                
+                .spread-more{
+                    position: absolute;
+                    bottom: 0;
+                    right: .1rem;
+                    width: 1rem;
+                    height: .40rem;
+                    line-height:.4rem;
+                    text-align: center;
+                    font-size:.22rem;
+                    font-weight: normal;
+                    color:#c7c7cd;
+                    background: #f8f8f8;
+                    margin-left:.12rem ;
+                    &::after{
+                        content: '';
+                        display: inline-block;
+                        width: 0.1rem;
+                        height: 0.2rem;
+                        background: url('~@/assets/icon/directing.png');
+                        background-size: 0.1rem 0.2rem;
+                        margin-left: 0.1rem;
+                        transform: rotate(90deg);
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+        .info{
+            padding:.32rem;
+            .answers{
+                display: flex;
+                display: -webkit-flex;
+                align-items: baseline ;
+                flex-flow: row;
+                .icon{
+                    flex: 0 0 .32rem;
+                    background: url('~@/assets/icon/answers-icon.png');
+                    background-size: .32rem .32rem;
+                    width: .32rem;
+                    height: .32rem;
+                    margin-right: .32rem;
+                }
+                .right{
+                    flex: 1;
+                    color: #333333; 
+                    .description{
+                        margin-bottom: .24rem;
+                        h2{
+                            font-size: .36rem;
+                            font-weight:bold;
+                            margin-bottom: .24rem;
+                        }
+                        p{
+                            font-size: .32rem;
+                            line-height: .54rem;
+                        } 
+                    }
+                   
+                }
+            }
+            .star{
+                width: 3rem;
+                height: .88rem;
+                line-height: .88rem;
+                font-size: .3rem;
+                color: #999999;
+                text-align: center;
+                margin: 0.76rem auto;
+                border:1px solid #e5e5e5; 
+                border-radius: .44rem;
+                span{
+                    display: inline-block;
+                    margin-left: .1rem;
+                }
+            }
+            .default{
+                .icon{
+                    background: url('~@/assets/images/icon/collect.png') no-repeat;
+                    background-size: .30rem .30rem;
+                }
+            }
+            .active{
+                color: #00ccb1;
+                border: 1px solid #00ccb1; 
+                .icon{
+                    background: url('~@/assets/images/icon/collect-hover.png') no-repeat;
+                    background-size: .30rem .30rem;
+                }
+            }
+        }
+        .case{
+            margin: .24rem 0;
+            padding-top:.32rem;
+            padding-bottom: .32rem; 
+            display: flex;
+            display: -webkit-flex;
+            align-items: center ;
+            flex-flow: row;
+            .icon{
+                flex: 0 0 .32rem;
+                margin-right: .32rem;
+            }
+            .fu{
+                background: url('~@/assets/icon/fu-icon.png');
+                background-size: .32rem .32rem;
+                width: .32rem;
+                height: .32rem;
+            }
+            .fa{
+                background: url('~@/assets/icon/fa-icon.png');
+                background-size: .32rem .32rem;
+                width: .32rem;
+                height: .32rem;
+            }
+            .an{
+                background: url('~@/assets/icon/an-icon.png');
+                background-size: .32rem .32rem;
+                width: .32rem;
+                height: .32rem;
+            }
+            .right{
+                flex: 1;
+                display: flex;
+                display: -webkit-flex;
+                align-items: baseline ;
+                flex-flow: row;
+                font-size: .34rem;
+                font-weight: bold;
+                .name{
+                    flex: 1;
+                    p{
+                        font-size: .22rem;
+                        font-weight: normal;
+                        color: #b0b0b0;
+                        margin-top: .14rem;
+                    }
+                    .page-footer{
+                        &::before{
+                            content:"";
+                            display: inline-block;
+                            background: url('~@/assets/icon/hilite-icon.png') no-repeat;
+                            background-size: .2rem .2rem;
+                            width: .2rem;
+                            height: .2rem;
+                            margin-right: .12rem;
+                        }
+                    }
+                }
+                .all{
+                    flex: 0 0 .1rem;
+                    background: url('~@/assets/icon/directing.png');
+                    background-size: 0.1rem 0.2rem;
+                    width: 0.1rem;
+                    height: 0.2rem;
+                    margin: auto 0;
+                    
+                }
+            }
+        }
+        .recommend-lawyer{
+            margin-top: .24rem;
+            position: relative;
+            top: 0;
+            background: #f8f8f8;
+            .top{
+                line-height: .68rem;
+                font-size: .28rem;
+                color: #333333;
+                background: #fff;
+                .padding-32px;
+            }
+            .content{
+                padding: .32rem .32rem .58rem .32rem;
+                .card{
+                    box-sizing:border-box;
+                    width: 4.52rem!important;
+                    height: 3.2rem;
+                    overflow: hidden;
+                    background: #fff;
+                    border-radius: .08rem;
+                    padding-top: .38rem;
+                    padding-left: .30rem;
+                    padding-bottom:.48rem;
+                    margin-right: .26rem;
+                    box-shadow:0 0 0.22rem 0.06rem rgba(229, 229, 229, 0.4);
+                    .card-info{
+                        display: flex;
+                        display: -webkit-flex;
+                        flex-flow: row;
+                        .logo{
+                            display: inline-block;
+                            flex: 0 0 1.2rem;
+                            width: 1.2rem;
+                            height: 1.2rem;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 50%;
+                            }
+                        }
+                        .right{
+                            flex: 1;
+                            display: inline-block;
+                            margin-left: 0.18rem;
+                            font-size: .32rem;
+                            color: #333333;
+                            .name{
+                                display: inline-block;
+                                font-weight: bold;
+                                margin-right: 0.18rem;
+                            }
+                            .job{
+                                display: inline-block
+                            }
+                            .company{
+                                margin-top: .16rem;
+                                color: #666666;
+                                font-size: .24rem;
+                            }
+                        }
+                    }
+                    .address{
+                        margin:.2rem 0;
+                        font-size: .24rem;
+                        color:#666;
+                        i{
+                            display: inline-block;
+                        }
+                        .years-name,.city{
+                            color: #333333;
+                        }
+                        .city{
+                            margin-right: .18rem;
+                        }
+                    }
+                    .stars{
+                        font-size: .18rem;
+                        display: -webkit-flex; /* Safari */
+                        display: flex;
+                        align-items: baseline;
+                        flex-flow: row;
+                        .item() {
+                            width: 0.18rem;
+                            height: 0.18rem;
+                            display: inline-block;
+                            background-size: 0.18rem 0.18rem;
+                            margin-right: .08rem
+                          }
+                          .star-active {
+                            background: url('~@/assets/icon/lawyer-star-h.png') no-repeat;
+                            .item;
+                          }
+                          .star-default {
+                            background: url('~@/assets/icon/lawyer-star.png') no-repeat;
+                            .item;
+                          }
+                    }
+                }
+            }
+        }
+    }
+
+}

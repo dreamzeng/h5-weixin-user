@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=cWwIy0kUoUrT6MdVTWlLHtLjO8fG1ePs"></script>
+    <title>法义用户端</title>
+    <link rel="stylesheet" type="text/css" href="<%= htmlWebpackPlugin.options.path %>lib/mui.min.css" />
+    <link rel="stylesheet" type="text/css" href="<%= htmlWebpackPlugin.options.path %>lib/mui-preview.css" />
+</head>
+
+<body>
+    <div id="app"></div>
+</body>
+<script src="<%= htmlWebpackPlugin.options.path %>lib/jquery-1.9.1.min.js"></script>
+<script src="<%= htmlWebpackPlugin.options.path %>lib/mui.min.js"></script>
+<script src="<%= htmlWebpackPlugin.options.path %>lib/webuploader.html5only.min.js"></script>
+<script src="<%= htmlWebpackPlugin.options.path %>lib/mui.zoom.js"></script>
+<script src="<%= htmlWebpackPlugin.options.path %>lib/mui.previewimage.js"></script>
+<% if(!htmlWebpackPlugin.options.apiType) { %>
+<script src="<%= htmlWebpackPlugin.options.path %>lib/vconsole.min.js"></script>
+<% } %>
+<% if(htmlWebpackPlugin.options.apiType) { %>
+<script src="<%= htmlWebpackPlugin.options.path %>server/api_cfg.js"></script>
+<% } %>
+<script>
+    // 初始化
+    var vConsole = null;
+    !function(){
+        if (/(iPhone|iPad|iPod|iOS )/i.test(navigator.userAgent)) {
+            document.body.style.fontFamily = 'PingFang SC Regular';
+        } else if (/(Android)/i.test(navigator.userAgent)) {
+            document.body.style.fontFamily = 'NoteSansCJKsc-Regular';
+        } else {
+            document.body.style.fontFamily = 'Microsoft Yahei';
+        }
+        if(typeof VConsole != undefined && typeof VConsole != "undefined"){
+            vConsole = new VConsole();
+        }
+
+    }();
+    (function (doc, win) {
+        //设计稿横向分辨率为375（iphone6），计划100px为1rem；
+        //布局的时候，各元素的css尺寸= 20 * （设备宽度/设计稿竖向分辨率）。
+
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                docEl.style.fontSize = (100 * (clientWidth / 750)) > 100 ? 100 + 'px' : (100 * (clientWidth / 750)) + 'px';
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+
+</script>
+
+</html>

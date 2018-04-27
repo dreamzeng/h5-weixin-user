@@ -1,0 +1,180 @@
+@import '~@/assets/less/var.less';
+.search-main{
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    .fixed{
+        position: absolute;
+        top: .88rem;
+        width: 100%;
+        z-index: 10;
+        .items-name{
+            height: .68rem;
+            line-height: .68rem;
+            font-size: .28rem;
+            background: #f2f3f5;
+            .padding-32px; 
+        }
+    }
+    .row{
+        .padding-32px;
+        font-size: .28rem;
+        color: #999999;
+        .items{
+           position: relative;
+           .item{
+               .fl;
+               height: .52rem;
+               line-height: .52rem;
+               background: #f8f8f8;
+               font-size: .26rem;
+               color: #333;
+               text-align: center;
+               border-radius: .1rem;
+               margin-right: .16rem;
+               margin-bottom: .32rem;
+               padding: 0 .16rem;
+           }
+       }
+    }
+    .header{
+        display: flex;
+        display: -webkit-flex;
+        align-items: center;
+        flex-flow: row;
+        height: .88rem;
+        font-size:.32rem;
+        border-bottom: 1px solid #e5e5e5;
+        position: relative;
+        z-index: 20;
+        background: #fff;
+        .left{
+            flex: 1;
+            height: .62rem;
+            line-height: .62rem;
+            position: relative;
+            width: 100%;
+            height: 0.62rem;
+            border-radius: 0.45rem;
+            background: #f8f8f8;
+            input{
+                display: inline-block;
+                position: relative;
+                top: -0.06rem;
+                width: 100%;
+                height: 0.5rem;
+                line-height: 0.5rem;
+                border: none;
+                background: #f8f8f8;
+                border-radius: 0.45rem;
+                text-align: left;
+                padding-left:.66rem 
+            }
+            .s-icon{
+                position: absolute;
+                left: .24rem;
+                top: .16rem;
+                display: inline-block;
+                background: url(~@/assets/icon/search.png);
+                .bg-32;
+            }
+            .del-icon{
+                position: absolute;
+                right: .24rem;
+                top: .16rem;
+                display: inline-block;
+                background: url(~@/assets/icon/close.png);
+               .bg-32;
+            }
+        }
+        .right{
+            margin-left: .4rem;
+            color: #00ccb1;
+        }
+    } 
+    .hot{
+        margin-bottom: .8rem;
+        .title{
+            margin: .4rem 0;
+        }
+    }
+    .old{
+        padding: 0;
+        .top{
+            .padding-32px; 
+            padding-top: .40rem;
+            margin-bottom: .4rem;
+            border-top: 1px solid #e5e5e5;
+            .left{
+               .fl; 
+            }
+            .right{
+                .fr;
+            }
+        }
+        .content{
+            .padding-32px; 
+        }
+    }
+    .goods-wrapping{
+        position: relative;
+        background: #fff;
+        .items-name{
+            height: .68rem;
+            line-height: .68rem;
+            font-size: .28rem;
+            background: #f2f3f5;
+            .padding-32px; 
+        }
+        .g-items{
+            .padding-32px; 
+            padding-bottom: .28rem;
+            .g-item{
+                padding:.48rem  0;
+                border-bottom: 1px solid #e5e5e5;
+                .title{
+                    font-size: .32rem;
+                    font-weight: bold;
+                    color: #333;
+                    margin-bottom: .28rem;
+                }
+                .content{
+                    .strLen2;
+                    font-size: .26rem;
+                    line-height: .40rem;
+                    color: #666;
+                    margin-bottom: .28rem;
+                }
+                .price{
+                    position: relative;
+                    font-size: 0;
+                    span{
+                        display: inline-block;
+                    }
+                    .p1{
+                        color: #ff5533;
+                        font-size: .36rem;
+                        margin-right: .24rem;
+                        i{
+                            font-size: .24rem;
+                            display: inline-block;
+                            margin-right: 2px;
+                        }
+                    }
+                    .p2{
+                        position: relative;
+                        top: -0.05rem;
+                        font-size: .22rem;
+                        color: #b0b0b0;
+                    }
+                }
+            }
+            .g-item:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
